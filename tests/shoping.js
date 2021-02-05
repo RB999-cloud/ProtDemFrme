@@ -101,7 +101,7 @@ it ('jeans', function(){
   
   browser.driver.executeScript(elmnt).then(function() {
       
-      browser.sleep(8000);
+      browser.sleep(2000);
   
     });
   
