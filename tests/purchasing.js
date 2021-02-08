@@ -23,7 +23,7 @@ describe('casual purchasing',function(){
    browser.driver.executeScript(b).then(function()
 
    {
-       browser.sleep(2000);
+       browser.sleep(3000);
    }
 
    );
