@@ -20,7 +20,7 @@ it ('Purchasing shirts', function(){
  
  {
 
-    browser.sleep(5000);
+    browser.sleep(4000);
  }
  );
 
