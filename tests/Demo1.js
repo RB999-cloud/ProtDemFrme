@@ -26,7 +26,7 @@ it ('Purchasing shirts', function(){
 
  element (by.xpath('//ul[@class="block_content products-block"]//a[contains(.,"Faded Short Sleeve T-shirts")]')).click();
 
- browser.sleep(4000);
+ browser.sleep(3000);
  
  var c = 'document.getElementsByClassName("product-heading-h5")[0].scrollIntoView()';
 
