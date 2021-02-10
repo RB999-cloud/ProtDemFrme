@@ -42,7 +42,7 @@ it ('Purchasing shirts', function(){
 
  element (by.xpath('//span[.="Add to cart"]')).click();
 
- browser.sleep(3000);
+ browser.sleep(4000);
 
 
 element (by.xpath('//span[contains(.,"Proceed to checkout")]')).click();
