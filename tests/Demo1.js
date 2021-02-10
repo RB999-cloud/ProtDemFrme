@@ -49,7 +49,7 @@ element (by.xpath('//span[contains(.,"Proceed to checkout")]')).click();
 
 element (by.xpath('//span[.="Proceed to checkout"]')).click();
 
-browser.sleep(3000);
+browser.sleep(4000);
 
 });
 
