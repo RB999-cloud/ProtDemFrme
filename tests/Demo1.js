@@ -55,3 +55,29 @@ browser.sleep(4000);
 
 
 });
+
+/*
+
+describe('Test', function(){
+
+
+   fit ('printing', function(){
+
+
+      console.log("Test1");
+   });
+
+   xit ('printing', function(){
+
+
+      console.log("Test2");
+   });
+
+   fit ('printing', function(){
+
+
+      console.log("Test3");
+   });
+});
+
+*/
