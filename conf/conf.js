@@ -10,16 +10,22 @@ exports.config = {
   directConnect: true,
 
   // Capabilities to be passed to the webdriver instance.
-  capabilities: {
+  capabilities: 
+  
+  {
     'browserName': 'chrome'
   },
+
+  // {
+  //   'browserName': 'firefox'
+  // },
 
   // Framework to use. Jasmine is recommended.
   framework: 'jasmine',
 
   // Spec patterns are relative to the current working directory when
   // protractor is called.
-  specs: ['../tests/Demo1.js'],
+  specs: ['../tests/Gmail.js'],
 
   // Options to be passed to Jasmine.
   jasmineNodeOpts: {

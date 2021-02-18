@@ -56,28 +56,27 @@ browser.sleep(4000);
 
 });
 
-/*
-
-describe('Test', function(){
 
 
-   fit ('printing', function(){
+// describe('Test', function(){
 
 
-      console.log("Test1");
-   });
-
-   xit ('printing', function(){
+//    fit ('printing', function(){
 
 
-      console.log("Test2");
-   });
+//       console.log("Test1");
+//    });
 
-   fit ('printing', function(){
+//    xit ('printing', function(){
 
 
-      console.log("Test3");
-   });
-});
+//       console.log("Test2");
+//    });
 
-*/
+//    fit ('printing', function(){
+
+
+//       console.log("Test3");
+//    });
+// });
+
