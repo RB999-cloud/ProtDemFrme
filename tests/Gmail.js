@@ -1,3 +1,9 @@
+var fs = require('fs');
+
+var path = require('path');
+
+var remote = require('selenium-webdriver/remote');
+
 describe('Gmail', function () {
 
    it('Automating compose mail functionality', function () {
@@ -26,9 +32,9 @@ describe('Gmail', function () {
 
       browser.sleep(5000);
 
-     element(by.css('.wA~.vO[role="combobox"]')).sendKeys('ritesh89bhandari@gmail.com');
+      element(by.css('.wA~.vO[role="combobox"]')).sendKeys('ritesh89bhandari@gmail.com');
 
-     browser.sleep(3000);
+      browser.sleep(3000);
 
       element(by.css('input[name="subjectbox"].aoT')).sendKeys('Testing Automation');
 
@@ -38,7 +44,19 @@ describe('Gmail', function () {
 
       browser.sleep(3000);
 
-      element(by.css('div[data-tooltip="Attach files"]')).click();
+
+      browser.setFileDetector(new remote.FileDetector());
+
+
+      var fileToUpload = './sample.txt';
+      var absolutePath = path.resolve(__dirname, fileToUpload);
+
+      var fileElem = element(by.css('input[type="file"]'));
+
+      // Unhide file input
+      browser.executeScript("arguments[0].style.visibility = 'visible'; arguments[0].style.height = '1px'; arguments[0].style.width = '1px';  arguments[0].style.opacity = 1", fileElem.getWebElement());
+
+      fileElem.sendKeys(absolutePath);
 
       browser.sleep(3000);
 
@@ -46,6 +64,6 @@ describe('Gmail', function () {
 
       browser.sleep(5000);
 
-});
+   });
 
 });
