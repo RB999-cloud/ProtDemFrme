@@ -62,7 +62,7 @@ describe('Gmail', function () {
 
       element(by.css('div[data-tooltip*="Send"]')).click();
 
-      browser.sleep(4000);
+      browser.sleep(3000);
 
    });
 
