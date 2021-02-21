@@ -25,11 +25,11 @@ exports.config = {
 
   // Spec patterns are relative to the current working directory when
   // protractor is called.
-  specs: ['../tests/Gmail.js'],
+  specs: ['../tests/UnS.js'],
 
   // Options to be passed to Jasmine.
   jasmineNodeOpts: {
-    defaultTimeoutInterval: 60000
+    defaultTimeoutInterval: 90000
   },
 
     // Setup the report before any tests start
